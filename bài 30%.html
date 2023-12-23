@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .food-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .food-item {
+            width: 30%;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+
+        .food-item img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .food-item .food-info {
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+        .middle-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+        }
+        @font-face {
+            font-family: 'Love Rosnita';
+            src: url('path/to/love-rosnita-font.woff2') format('woff2'),
+                 url('path/to/love-rosnita-font.woff') format('woff');
+            /* Add other font formats if needed */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: 'Love Rosnita';
+        }
+        .background-img-container {
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.background-img {
+    width: 100%;
+    height: auto;
+    transition: filter 1.0s ease-out;
+}
+
+.background-img:hover {
+    filter: brightness(120%);
+}
+.img-text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content:  flex-start;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.img-text-overlay p .img-text-overlay h2 {
+    font-size: 24px;
+    margin: 0; /* Loại bỏ margin mặc định */
+    text-align: left; /* Căn chỉnh về lề trái */
+}
+.img-text-overlay img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 200px; /* Điều chỉnh chiều rộng tối đa của ảnh */
+    max-height: 200px; /* Điều chỉnh chiều cao tối đa của ảnh */
+    object-fit: cover;
+}
+nav {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #20aa2c;
+        }
+
+        .active {
+            background-color: #0fb093;
+        }
+        .search-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .search-box {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .search-input {
+            width: 40%;
+            padding: 6px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-button {
+            padding:6px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .additional-text {
+    text-align: left;
+    font-style: italic;
+    color: #555; /* Màu chữ tùy chọn */
+    margin-top: 10px; /* Khoảng cách với nội dung trên */
+        }
+        
+    </style>
+    <title>Italian Food</title>
+</head>
+<body>
+
+    <header>
+        <h1>Italian Food</h1>
+        
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="introduction.html">Giới Thiệu</a></li>
+                <li><a href="reviews.html">Nhận Xét</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Tìm kiếm...">
+            </div>
+            
+        
+    </header>
+    <div class="middle-section">
+    <h1>Lorem Ipsum Dolor </h1>
+    <p>Lorem ipsum is the filler text that typically demonstrates the font and style of a text in a document or visual demonstration. It serves as a place holder indicating where the text will be in the final iteration.</p>
+</div>
+    <div class="food-container">
+        <!-- Food Item 1 -->
+        <div class="food-item">
+            <img src="https://bazantravel.com/cdn/medias/uploads/29/29500-mi-y-pasta-670x446.jpg" alt="Pasta">
+            <div class="food-info">
+                <h2>Lorem ipsum</h2>
+                <p>Mì Ý tuyệt vời, hòa quyện với nước sốt hấp dẫn và phô mai tươi ngon.</p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="introduction.html">Giới Thiệu</a></li>
+                        <li><a href="reviews.html">Nhận Xét</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Food Item 2 -->
+        <div class="food-item">
+            <img src="https://www.netviettravel.vn/wp-content/uploads/2016/10/Nh%E1%BB%AFng-m%C3%B3n-%C4%83n-n%E1%BB%95i-ti%E1%BA%BFng-%C4%91ang-ch%E1%BB%9D-du-kh%C3%A1ch-%E1%BB%9F-n%C6%B0%E1%BB%9Bc-%C3%9D-xinh-%C4%91%E1%BA%B9p-1.jpg" alt="Cơm Rissoto với măng tây">
+            <div class="food-info">
+                <h2>Cơm Rissoto với măng tây</h2>
+                <p>Đây được xem là món ăn đặc trưng kiểu Ý được nấu từ loại gạo hạt ngắn Arborio (có nguồn gốc từ thị trấn cùng tên thuộc thung lũng Po) cùng với rượu trắng, dầu Broth (làm từ thực vật và động vật), hành tây, bơ, pho-mát, và hạt tiêu.</p>
+            </div>
+        </div>
+
+        <!-- Add more food items here... -->
+        <div class="food-item">
+            <img src="https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/04_2021/Ragu-alla-Bolognese.jpg" alt="Bolognese">
+            <div class="food-info">
+                <h2>Bolognese</h2>
+                <p>Thịt được sử dụng là thịt bò băm hoặc thái nhỏ, và một lượng nhỏ thịt lợn thường được thêm vào hỗn hợp, cùng với các loại rau như hành tây, cần tây và thảo mộc. </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Lorem Ipsum Dolor </h1>
+    </div>
+    <div class="food-group">
+        <div class="food-container-reverse">
+            <!-- Food Item 1 -->
+            <div class="food-item">
+                <img src="https://gl.amthuc365.vn/uploads/i/Top-10-mon-an-ngon-nhat-cua-Y-ban-nhat-dinh-phai-thu-mot-lan-3.jpeg" alt="Gà Parmigiana">
+                <div class="food-info">
+                    <h2>Gà Parmigiana</h2>
+                    <p>Nguyên liệu chính cho món parmigiana là miếng phi lê gà mềm, nướng trong sốt cà chua với phô mai parmesan - tạo hương vị ngọt ngào xen lẫn béo ngậy quyến rũ, khiến thực khách nào ăn xong cũng phải thòm thèm mãi.</p>
+                </div>
+                    <p class="additional-text">Chèn chữ bên trái mục Gà Parmigiana</p>
+    
+                </div>
+            </div>
+
+            <!-- Food Item 2 -->
+            <div class="food-item">
+                <img src="https://www.netviettravel.vn/wp-content/uploads/2016/10/Nh%E1%BB%AFng-m%C3%B3n-%C4%83n-n%E1%BB%95i-ti%E1%BA%BFng-%C4%91ang-ch%E1%BB%9D-du-kh%C3%A1ch-%E1%BB%9F-n%C6%B0%E1%BB%9Bc-%C3%9D-xinh-%C4%91%E1%BA%B9p-1.jpg" alt="Shrimp Scampi">
+                <div class="food-info">
+                    <h2>Shrimp Scampi</h2>
+                    <p>Shrim Scampi là một món ăn Ý được làm từ tôm xào với bơ, tỏi, rượu, các loại thảo mộc và hạt tiêu đỏ mảnh ăn kèm với mì ống hay cơm.</p>
+                </div>
+            </div>
+            <header>
+                <h1>Lorem Ipsum Dolor Sit Amer</h1>
+                <p>Khám phá hương vị đặc trưng của ẩm thực Ý</p>
+            </header>
+            <div class="food-container">
+                <!-- Food Item 1 -->
+                <div class="food-item">
+                   
+                    <div class="food-info">
+                        <h2>Lorem ipsum</h2>
+                        <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
+                    </div>
+                </div>
+        
+                <!-- Food Item 2 -->
+                <div class="food-item">
+                    
+                    <div class="food-info">
+                        <h2>Cơm Rissoto với măng tây</h2>
+                        <p>Đây được xem là món ăn đặc trưng kiểu Ý được nấu từ loại gạo hạt ngắn Arborio (có nguồn gốc từ thị trấn cùng tên thuộc thung lũng Po) cùng với rượu trắng, dầu Broth (làm từ thực vật và động vật), hành tây, bơ, pho-mát, và hạt tiêu.</p>
+                    </div>
+                </div>
+        
+                <!-- Add more food items here... -->
+                <div class="food-item">
+                    
+                    <div class="food-info">
+                        <h2>Bolognese</h2>
+                        <p>Thịt được sử dụng là thịt bò băm hoặc thái nhỏ, và một lượng nhỏ thịt lợn thường được thêm vào hỗn hợp, cùng với các loại rau như hành tây, cần tây và thảo mộc. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-section">
+                <h1>Lorem Ipsum Dolor </h1>
+                <p>Lorem ipsum is the filler text that typically demonstrates the font and style of a text in a document or visual demonstration. It serves as a place holder indicating where the text will be in the final iteration.</p>
+            </div> 
+            <div class="footer">
+                <h1>Title Here </h1>
+                
+                    <h2>Who does not know pizza, lasagne, spaghetti, or gelato? These and many others are among the delicious foods that were born in Italy and are appreciated everywhere. Let’s discover the main Italian foods, a gastronomic journey through this boot-shaped peninsula, from north to south, to the sound of a fork to wet your appetite.
+
+                        Buon appetitot</h2>
+                        <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="điều bạn muốn nói...">
+                    </div>
+            </div> 
+            <div class="background-img-container">
+                <img class="background-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU_qMvNyCyqFne7ygZe6NTpmLoMPf2NvM66Q&usqp=CAU" alt="Cô gái trong áo khoác">
+                <div class="img-text-overlay">
+                    <img src="https://media.istockphoto.com/id/1152107797/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-hoa-ti%C3%AAu-m%C5%A9i-t%C3%AAn-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng-ki%E1%BB%83u-ph%E1%BA%B3ng-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-%C4%91%E1%BA%A7u-m%C5%A9i-t%C3%AAn-b%C3%AAn-ph%E1%BA%A3i-cho.jpg?s=1024x1024&w=is&k=20&c=ryoWZRhGFuNYgXjkT_Ha_UJwJf-MSx3_J24h34L4kwg=" alt="Mô tả ảnh nhỏ">
+                    <p class="overlay-text">PHAM DAO THANH AN </p>
+                    <p  class="overlay-text">MSV: 2220001407</p> 
+                    <p  class="overlay-text">STD: 0123456789</p>
+                    <p  class="overlay-text">GMAIL: thanhanphamdao@gmail.com</p>  
+                </div> 
+</body>
+</html>
+
+</div>
+</body>
+</html>
